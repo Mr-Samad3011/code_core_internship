@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        .container.hidden {
+            display: none;
+        }
+
+         .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+
+        .card{
+            width: 280px;
+            height: 400px;
+            /* border: 2px solid red; */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+           box-shadow: 2px 2px 5px black;
+           border-radius: 5px;
+        }
+            .img {
+                width: 100%;
+                height: 60%;
+                /* border: 2px solid black; */
+                
+                
+            }
+            .img img{
+                width: 100%;
+                height: 100%;
+                
+            }
+
+            .cont{
+                margin: 0;
+                margin-top: -15px;
+                padding: 0;
+                padding-left: 10px;
+                background-color: whitesmoke;
+            }
+            .cont p,.cont h1{
+                margin-bottom:-10px;
+            }
+
+            
+            .cont h1{
+                color: rgb(219, 214, 214);
+                padding-top: -10px;
+            }
+
+            .rate{
+                display: flex;
+                gap: 30px;
+            }
+            .del-color{
+                 color: rgb(219, 214, 214);
+            }
+            .size{
+                display: flex;
+                gap: 25px;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid green; */
+                
+            }
+          .size button{
+            border: none;
+            width: 30px;
+            height: 30px;
+            background-color: whitesmoke;
+            font-size: 16px;
+          
+          }
+
+          .footox-color{
+            color:  rgb(219, 214, 214);
+            font-size: 20px;
+          }
+
+          .cont:hover{
+            background-color: whitesmoke;
+            bottom: 53px;
+            cursor: pointer;
+            position: relative;
+            transition: bottom .5s ease-in-out;
+          
+          }
+          
+
+          .card:hover{
+            box-shadow: 2px 5px 2px 5px rgb(99, 93, 93);
+            cursor: pointer;
+            transform: translateY(-5px);
+          }
+
+          .cont  .add_buy{
+            width: calc(100% + 20px);
+            height: 50px;
+            display: flex;
+            /* left: -10px; */
+            margin: 0;
+            margin-left: -10px;
+            margin-right: -10px;
+            position: relative;
+            border: 2px solid rebeccapurple;
+            
+          }
+          .add_buy button{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+            
+          }
+
+          .add_buy button:first-child{
+            border-right: 2px solid black;
+          }
+
+          
+          nav h1{
+            font-size: 50px;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 480px) {
+            nav h1{
+                font-size: 16px;
+            }
+}
+    .toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .toggle button{
+        border: 1px solid black;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: antiquewhite;
+    
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Cards</title>
+</head>
+<body>
+
+    <nav>
+        <h1>Style a service card with hover effect</h1>
+        <h1>Add a button to toggle service visibility</h1>
+    </nav>
+
+    <!--  Toggle Button  -->
+    <div class="toggle">
+        <button id="toggleBtn">Hide Services</button>
+    </div>
+
+    <section class="container">
+        
+          <div class="card">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 450</p><p class="del-color"><del>900</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/h/l/8-el5037-ajanta-purple-original-imahbjyccvayaaeh.jpeg?q=70" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 1500</p><p class="del-color"><del>2500</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+         <div class="card">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 450</p><p class="del-color"><del>900</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/h/l/8-el5037-ajanta-purple-original-imahbjyccvayaaeh.jpeg?q=70" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 1500</p><p class="del-color"><del>2500</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+<!-- Servise card ith toggle button effect -->
+
+
+        <div class="card toggle-card"   id="cardContainer">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/m/f/s/5-la1054-5-layasa-white-golden-original-imahbhftpesnhqhb.jpeg?q=70" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 1000</p><p class="del-color"><del>1500</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card toggle-card" id="cardContainer">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false" alt="image"></div>
+            <div class="cont">
+                <h1   >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 450</p><p class="del-color"><del>700</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card toggle-card" id="cardContainer">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/n/6/i/5-flp-816-prpl-5-fabbmate-purple-original-imahyse725bzmeg3.jpeg?q=70" alt="image"></div>
+            <div class="cont">
+                <h1 >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 300</p><p class="del-color"><del>900</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card toggle-card" id="cardContainer">
+            <div class="img"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/3/t/j/3-774-womn-3-deals4you-pink-original-imah6gdfgfgk26ha.jpeg?q=70" alt="image"></div>
+            <div class="cont">
+                <h1  >Sponsore</h1>
+                <p class="footox-color">Footox</p>
+                <p>Casual Shoes Sneakers For Women</p>
+                <div class="rate"><p>Rs. 1200</p><p class="del-color"><del>3200</del></p></div>
+                <div class="size">
+                    <h3>Size</h3>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+
+                </div>
+                <div class="add_buy">
+                    <button>Add to cart</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+
+   <!-- Javascript toggle code  -->
+  <script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const toggleCards = document.querySelectorAll('.toggle-card');
+  let visible = true;
+
+  toggleBtn.addEventListener('click', () => {
+      visible = !visible;
+      toggleCards.forEach(card => {
+          card.style.display = visible ? 'flex' : 'none';
+      });
+      toggleBtn.textContent = visible ? 'Hide Services' : 'Show Services';
+  });
+</script>
+
+
+</body>
+</html>
+
+
+
