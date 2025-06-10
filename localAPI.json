@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 700,
+    "original_price": 1100,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false"
+  },
+  {
+    "id": 2,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 450,
+    "original_price": 900,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/h/l/8-el5037-ajanta-purple-original-imahbjyccvayaaeh.jpeg?q=70"
+  },
+  {
+    "id": 3,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 1500,
+    "original_price": 2500,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false"
+  },
+  {
+    "id": 4,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 450,
+    "original_price": 900,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/h/l/8-el5037-ajanta-purple-original-imahbjyccvayaaeh.jpeg?q=70"
+  },
+  {
+    "id": 5,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 450,
+    "original_price": 900,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/h/l/8-el5037-ajanta-purple-original-imahbjyccvayaaeh.jpeg?q=70"
+  },
+  {
+    "id": 6,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 1500,
+    "original_price": 2500,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false"
+  },
+  {
+    "id": 7,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 1000,
+    "original_price": 1500,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/m/f/s/5-la1054-5-layasa-white-golden-original-imahbhftpesnhqhb.jpeg?q=70"
+  },
+  {
+    "id": 8,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 450,
+    "original_price": 700,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/o/m/6-white-black-fwcs-13-6-footox-white-black-original-imah8kfwqy5hvdmk.jpeg?q=70&crop=false"
+  },
+  {
+    "id": 9,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 300,
+    "original_price": 900,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/n/6/i/5-flp-816-prpl-5-fabbmate-purple-original-imahyse725bzmeg3.jpeg?q=70"
+  },
+  {
+    "id": 10,
+    "brand": "Footox",
+    "title": "Casual Shoes Sneakers For Women",
+    "price": 1200,
+    "original_price": 3200,
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/3/t/j/3-774-womn-3-deals4you-pink-original-imah6gdfgfgk26ha.jpeg?q=70"
+  },
+  {
+    "id": 11,
+    "brand": "Nike",
+    "title": "Running Shoes",
+    "price": 2999,
+    "original_price": 3999,
+    "sizes": [
+      6,
+      7,
+      8
+    ],
+    "image": "https://example.com/shoe.jpg"
+  },
+  {
+    "id": 12,
+    "brand": "Puma",
+    "title": "Running Shoes",
+    "price": 2999,
+    "original_price": 3999,
+    "sizes": [
+      6,
+      7,
+      8
+    ],
+    "image": "https://example.com/shoe.jpg"
+  },
+  {
+    "id": 13,
+    "brand": "Puma",
+    "title": "Running Shoes",
+    "price": 2999,
+    "original_price": 3999,
+    "sizes": [
+      6,
+      7,
+      8
+    ],
+    "image": "https://example.com/shoe.jpg"
+  }
+]
