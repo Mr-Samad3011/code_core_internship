@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+
+    <style>
+        :root {
+            --primary-color: yellow;
+            --text-gray: rgb(130, 130, 130);
+            --text-dark: rgb(80, 80, 80);
+            --text-muted: rgb(170, 170, 170);
+            --bg-light: whitesmoke;
+            --card-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            --radius: 8px;
+            --padding: 10px;
+            --contPadding: 0;
+            --font-small: 14px;
+            --font-base: clamp(1rem, 1.5vw, 1.2rem);
+            --font-large: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        nav h1 {
+            font-size: var(--font-base);
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+
+            width: 300px;
+            background-color: white;
+            box-shadow: var(--card-shadow);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 400px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .img {
+            height: 60%;
+            width: 100%;
+        }
+
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cont {
+            background-color: var(--bg-light);
+            padding: var(--padding);
+
+        }
+
+        .cont p,
+        .cont h3 {
+            margin: 4px 0;
+        }
+
+        .cont h3 {
+            color: var(--text-dark);
+        }
+
+        .cont:hover {
+            background-color: whitesmoke;
+            bottom: 45px;
+            cursor: pointer;
+            position: relative;
+            transition: bottom .5s ease-in-out;
+        }
+
+        .rate {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footox-color {
+            color: var(--text-gray);
+            font-size: var(--font-small);
+        }
+
+        .del-color {
+            color: var(--text-muted);
+        }
+
+        .size {
+            display: flex;
+            gap: 10px;
+            font-size: var(--font-small);
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .size button {
+            border: 1px solid #aaa;
+            background-color: var(--bg-light);
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .add_buy {
+            display: flex;
+            margin-top: 10px;
+            width: calc(100% + 20px);
+
+            margin-left: -10px;
+        }
+
+        .add_buy button {
+            flex: 1;
+            background-color: var(--primary-color);
+            font-size: 16px;
+
+            height: 45px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add_buy button:first-child {
+            border-right: 1px solid #000;
+        }
+
+
+        /* Improved responsiveness */
+        @media screen and (max-width: 768px) {
+
+            nav h1 {
+                font-size: 20px;
+            }
+
+            .rate {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .add_buy button {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                height: 470px;
+            }
+
+            nav h1 {
+                font-size: 16px;
+            }
+
+            .toggle button {
+                width: 140px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .size {
+                gap: 6px;
+            }
+
+            .footer_box ul {
+                flex-direction: column;
+
+            }
+
+            .nav_bar {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .nav_bar ul {
+                flex-direction: column;
+                display: flex;
+
+                flex-wrap: wrap;
+                justify-content: start;
+                align-items: center;
+                /* border: 2px solid rebeccapurple; */
+
+            }
+
+            .cont {
+                padding: 14px;
+            }
+
+        }
+
+
+        .nav_bar {
+            display: flex;
+            width: 100%;
+            /* border: 2px solid black; */
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 0;
+            padding: 0;
+            font-size: var(--font-large);
+            box-sizing: border-box;
+
+
+        }
+
+        .nav_bar a {
+            color: coral;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav_bar button {
+            color: coral;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            font-size: var(--font-large);
+            cursor: pointer;
+        }
+
+
+        .nav_bar ul {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        .nav_bar ul:first-child {
+
+            /* border: 2px solid black; */
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav_bar ul:last-child {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        footer {
+            box-shadow: 2px 4px 10px rgba(82, 78, 78, 0.3);
+            display: flex;
+        }
+
+        .footer_box {
+            width: 100%;
+            /* border: 2px solid black; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: auto;
+            box-shadow: 2px 4px 10px rgba(184, 182, 182, 0.3);
+        }
+
+        .footer_box ul {
+            width: 100%;
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            list-style-type: none;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 2px solid black; */
+            color: rgb(237, 122, 80);
+            font-size: var(--font-large);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav_bar">
+
+            <ul>
+                <li><a href="day_9.html">Home</a></li>
+                <li> <a href="#productContainer">Service Card</a></li>
+
+            </ul>
+
+
+
+            <ul>
+                <li>
+
+                    <button id="toggleBtn">Hide Services</button>
+
+                </li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+            <h1>Style a service card with hover effect</h1>
+            <h1>Add a button to toggle service visibility</h1>
+            <h1> responsive services page with CSS Grid</h1>
+            <h1>Improve page with CSS variables and media queries</h1>
+        </nav>
+    </header>
+
+    <div class="container" id="productContainer"></div>
+
+    <script>
+        async function fetchProducts() {
+            try {
+                const response = await fetch('./localAPI.json');
+                const products = await response.json();
+
+                const container = document.getElementById('productContainer');
+                container.innerHTML = '';
+
+                products.forEach(product => {
+                    const card = document.createElement('div');
+                    card.className = 'card toggle-card';
+                    console.log(card.className);
+
+                    card.innerHTML = `
+            
+            <img src="${product.image}" alt="${product.title}" class="img" />
+           
+            <div class="cont">
+            <h3 >Sponsor</h3>
+            <p class="footox-color">Footox</p>
+            <p>${product.title}</p>
+            <div>Brand: ${product.brand}</div>
+            <div class="rate">₹${product.price} <small style="text-decoration: line-through; color: gray;">₹${product.original_price}</small></div>
+            <div class="size">
+                    Sizes: ${product.sizes.map(size => `<button>${size}</button>`).join('')}
+            </div>
+
+            <div class="add_buy">
+            <button>Add to cart</button>
+             <button>Buy Now</button>
+            </div>
+            </div>
+          `;
+
+                    container.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        fetchProducts();
+    </script>
+
+
+    <footer id="about">
+        <div class="footer_box">
+            <ul>
+                <li>© All right reserved</li>
+                <li>Build by Abdus Samad</li>
+                <li>abdussamad.7562@gmail.com</li>
+                <li>Prayagraj UttarPradesh</li>
+            </ul>
+        </div>
+    </footer>
+
+  <script>
+  const toggleBtn = document.getElementById('toggleBtn');
+
+  let isVisible = true;
+
+  toggleBtn.addEventListener('click', () => {
+    isVisible = !isVisible;
+
+    // Select only cards with the "toggle-card" class
+    const toggleCards = document.querySelectorAll('.toggle-card');
+
+    toggleCards.forEach(card => {
+      card.style.display = isVisible ? 'block' : 'none';
+    });
+
+    toggleBtn.textContent = isVisible ? 'Hide Services' : 'Show Services';
+  });
+</script>
+
+
+</body>
+
+</html>

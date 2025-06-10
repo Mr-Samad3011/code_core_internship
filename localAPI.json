@@ -148,44 +148,6 @@
       8
     ],
     "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/3/t/j/3-774-womn-3-deals4you-pink-original-imah6gdfgfgk26ha.jpeg?q=70"
-  },
-  {
-    "id": 11,
-    "brand": "Nike",
-    "title": "Running Shoes",
-    "price": 2999,
-    "original_price": 3999,
-    "sizes": [
-      6,
-      7,
-      8
-    ],
-    "image": "https://example.com/shoe.jpg"
-  },
-  {
-    "id": 12,
-    "brand": "Puma",
-    "title": "Running Shoes",
-    "price": 2999,
-    "original_price": 3999,
-    "sizes": [
-      6,
-      7,
-      8
-    ],
-    "image": "https://example.com/shoe.jpg"
-  },
-  {
-    "id": 13,
-    "brand": "Puma",
-    "title": "Running Shoes",
-    "price": 2999,
-    "original_price": 3999,
-    "sizes": [
-      6,
-      7,
-      8
-    ],
-    "image": "https://example.com/shoe.jpg"
   }
+  
 ]
